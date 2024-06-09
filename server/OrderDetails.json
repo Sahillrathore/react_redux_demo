@@ -1,0 +1,32 @@
+{
+  "ProDetails": [
+    {
+      "id": 1,
+      "customer": "Mr. Sahil",
+      "product": "Laptop",
+      "address": "New Delhi, Delhi, India",
+      "status": "Delivered"
+    },
+    {
+      "id": 2,
+      "customer": "Lakshay js",
+      "product": "Acer SB220Q bi 21.5",
+      "address": "Delhi, India",
+      "status": "Pending"
+    },
+    {
+      "id": 3,
+      "customer": "Rahul kumar",
+      "product": "PS5",
+      "address": "Mumbai, Maharashtra, India",
+      "status": "Pending"
+    },
+    {
+      "id": 4,
+      "customer": "Dhruv Chauhan",
+      "product": "Mobile Phone",
+      "address": "Delhi, India",
+      "status": "Delivered"
+    }
+  ]
+}

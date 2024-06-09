@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+.logo span {
+    font-family: "Oswald";
+    color: rgb(182, 47, 47);
+}
+
+.loader1 {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #3498db; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.25s linear infinite;  
+} 
+
+.action-btn img{
+    height: 40px;
+    cursor: pointer;
+}
+#nav-action img{
+    height: 30px;
+}
+::selection {
+    background: rgba(209, 38, 72, 0.438);
+}
