@@ -17,7 +17,7 @@ const Header = () => {
     <>
         <nav className='flex justify-between items-center px-6 py-2 bg-zinc-100 border-b-2 border-zinc-300 dark:border-gray-700 sticky top-0 z-10 dark:bg-zinc-900'>
             <div className="logo">
-                <span className='text-3xl font-black dark:text-red-600 '>ShopE</span>
+                <NavLink to="/" className='text-2xl font-semibold text-red-600 cursor-pointer '>StyleSquare</NavLink>
             </div>
 
             <div className="nav-links">
@@ -38,13 +38,13 @@ const Header = () => {
                         </NavLink>
                     </li>
 
-                    <li>
+                    {/* <li>
                         <NavLink to="orders"
                         className={({isActive})=>`${isActive? "text-reddish dark:text-red-500" : "text-zinc-600 dark:text-zinc-400"} p-1.5`}
                         >
                             Track Order
                         </NavLink>
-                    </li>
+                    </li> */}
 
                     <li>
                         <NavLink to="contact"

@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard/>} />
             <Route path="about" element={<About/>} />
-            <Route path="orders" element={<OrderDetails/>} />
+            {/* <Route path="orders" element={<OrderDetails/>} /> */}
             <Route path="orders/add-data" element={<AddData/>} />
             <Route path="cart/:id" element={<Cart/>} />
             <Route path="Product/:id" element={<ProductLandingPage/>} />

@@ -2,7 +2,6 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
-import ReactImageMagnify from 'react-image-magnify';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../store/slices/cartSlice';
 
@@ -31,21 +30,12 @@ const ProductLandingPage = () => {
         <>
         <section className="text-gray-600 body-font overflow-hidden dark:bg-gray-900 dark:text-gray-200">
             <div className="container px-5 py-24 pt-12 mx-auto">
-                <div className="lg:w-full justify-center flex flex-wrap">
-                    <ReactImageMagnify {...{
-                        smallImage: {
-                            alt: 'Wristwatch by Ted Baker London',
-                            // isFluidWidth: true,
-                            src: productDetails.image,
-                            width: 370,
-                            height: 400,
-                        },
-                        largeImage: {
-                            src: productDetails.image,
-                            width: 800,
-                            height: 1100
-                        }
-                    }} />
+                <div className="lg:w-full flex flex-wrap lg:justify-around justify-center">
+
+                    <div className="proImage lg:w-96 w-72">
+                        <img src={productDetails.image} alt="" className='w-full h-full' />
+                    </div>
+                    
                     <div className="lg:w-1/2  lg:pl-10 lg:py-6 mt-6 lg:mt-0 ">
                         <h2 className="text-sm title-font text-gray-500 tracking-widest dark:text-gray-400">
                             {productDetails.category}
@@ -193,7 +183,7 @@ const ProductLandingPage = () => {
                             <span className="title-font font-medium text-2xl text-gray-900 dark:text-gray-300">
                                 ${productDetails.price}
                             </span>
-                            <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded" onClick={()=>{addtocart()}}>
+                            <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 sm:px-6 focus:outline-none hover:bg-indigo-600 rounded" onClick={()=>{addtocart()}}>
                                 Add To Cart
                             </button>
                             <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">

@@ -26,7 +26,7 @@ const Contact = () => {
                             
                         </div>
                         <div className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto md:py-8 mt-8 md:mt-0 flex-1">
-                            <h2 className="text-white text-lg mb-1 font-medium title-font">
+                            <h2 className="text-zinc-700 text-lg mb-1 font-medium title-font dark:text-white">
                                 Get in touch
                             </h2>
                             
