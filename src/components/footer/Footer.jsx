@@ -97,18 +97,11 @@ const Footer = () => {
                                             Other Resources
                                         </span>
                                         <ul className="list-unstyled">
+                                            
                                             <li>
                                                 <a
                                                     className="text-zinc-200 hover:text-zinc-400 font-semibold block pb-2 text-sm"
-                                                    href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
-                                                >
-                                                    MIT License
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    className="text-zinc-200 hover:text-zinc-400 font-semibold block pb-2 text-sm"
-                                                    href="https://creative-tim.com/terms?ref=njs-profile"
+                                                    href="#"
                                                 >
                                                     Terms &amp; Conditions
                                                 </a>
@@ -116,7 +109,7 @@ const Footer = () => {
                                             <li>
                                                 <a
                                                     className="text-zinc-200 hover:text-zinc-400 font-semibold block pb-2 text-sm"
-                                                    href="https://creative-tim.com/privacy?ref=njs-profile"
+                                                    href="#"
                                                 >
                                                     Privacy Policy
                                                 </a>

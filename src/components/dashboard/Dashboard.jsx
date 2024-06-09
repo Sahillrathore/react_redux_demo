@@ -48,6 +48,16 @@ const Dashboard = () => {
         dispatch(addToCart(data))
     }
 
+    const sidemenuToggle = () => {
+        const sidemenu = document.querySelector(".sidemenu");
+        sidemenu.classList.toggle("block")
+        sidemenu.classList.remove("sticky")
+        sidemenu.classList.add("fixed")
+        sidemenu.classList.add("z-10")
+        console.log("systummm");
+
+    }
+
     return (
         <>
             <div className="flex items-center justify-center bg-zinc-900 h-screen w-full fixed top-0 z-10 overlay dark:bg-gray-800">
@@ -57,9 +67,13 @@ const Dashboard = () => {
 
             <div className="box flex dark:bg-gray-900">
 
-                <div className="sidemenu bg-gray-100 w-60 p-6 pl-4 list-none sticky top-14 h-full dark:bg-gray-900 dark:text-zinc-300">
+                <div className="sidemenu-toggler z-20 sticky top-14 h-fit dark:invert" onClick={sidemenuToggle}>
+                    <img src="https://img.icons8.com/?size=100&id=21969&format=png&color=000000" alt="" className='h-10 w-14' />
+                </div>
 
-                    <li className='p-1 rounded-lg cursor-default mb-2 opacity-90 text-reddish dark:text-red-500'>Browse By Category</li>
+                <div className="sidemenu bg-gray-100 w-60 p-6 pl-4 list-none sticky top-12 h-full dark:bg-gray-900 dark:text-zinc-300">
+
+                    <li className='p-1 rounded-lg cursor-default mb-2 opacity-90 text-reddish dark:text-red-500 text-right md:text-left'>Browse By Category</li>
 
                     <li className='p-1 pl-3 rounded-lg mb-1 hover:bg-gray-400 cursor-pointer capitalize border-b-2 border-gray-400 dark:hover:bg-gray-800' onClick={() => { getAllData() }}>All</li>
                     {
@@ -70,19 +84,18 @@ const Dashboard = () => {
                 </div>
 
 
-                <div className="w-full flex flex-wrap bg-zinc-00 justify-start pl-8 py-8 gap-6 cards-wrapper">
+                <div className="w-full flex flex-wrap bg-zinc-00 md:justify-start justify-center md:pl-8 pl-0 py-8 gap-6 cards-wrapper">
                     {
                         state.map((data, idx) => (
                             <Card key={idx}
                             raised 
                                 sx={{
-                                    width: 300,
+                                    
                                     // margin: "0 auto",
                                     padding: "0.1em",
                                     border: "1px solid rgba(0, 0, 0, 0.329)",
                                 }}
-                                className='dark:bg-gray-800'
-                            >
+                                className='dark:bg-gray-800 w-72 md:w-80'>
                                 <CardMedia
                                     component="img"
                                     alt="product img"

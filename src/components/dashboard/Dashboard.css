@@ -27,6 +27,10 @@
     margin-top: 24px;
 }
 
+.sidemenu-toggler {
+    display: none;
+}
+
 @media(max-width: 920px) {
     .cards-wrapper > :nth-child(3) .card-text .add-to-cart{
         margin-top: 0px;
@@ -44,3 +48,13 @@
         margin-top: 0px;
     }
 }
+
+@media (max-width: 768px) {
+    .sidemenu {
+        display: none;
+    }
+    .sidemenu-toggler {
+        display: block;
+    }
+}
+
